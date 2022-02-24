@@ -1,9 +1,9 @@
 body {
-    /*padding: 0%;
-    margin: 0%;*/
     font-family: "roboto",sans-serif;
     max-width: 1440px;
     margin-inline: auto;
+    list-style: none;
+    margin: 0px;
 }
 
 header {
@@ -11,9 +11,14 @@ header {
     align-items: center; 
     padding-top: 5px;
     padding-bottom: 5px;
+    justify-content: center;
     
     img {
-        margin: auto;
+        
+        background-color: #fff;
+        box-shadow: 0 0 10px #f7f7f7;
+        display: flex;
+        padding: 8px;
     }
 }
 .pre-loader
@@ -22,7 +27,7 @@ header {
     height: 100vh;
     z-index: 99;
     background-color: #f2f2f2;
-    animation: temps 4s forwards;
+    animation: temps 2s forwards;
     position: fixed;
     display: flex;
     justify-content: center;
@@ -37,7 +42,7 @@ header {
     border-radius: 50%;
     width: 120px;
     height: 120px;
-    animation: spin 4s linear infinite;
+    animation: spin 2s linear infinite;
   }
 }
 @keyframes spin {
@@ -66,7 +71,7 @@ header {
         flex-direction: column;
         padding-bottom: 30px;
         background-color: #f2f2f2;
-        width: 50%;
+        width: 100%;
         h1 {
             font: bold;
             padding-left: 2%;
@@ -112,12 +117,13 @@ header {
     .conteneur-f {
         display: flex;
         flex-wrap: wrap;
-        flex-direction: column;
-        width: 48%;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
 
         h2 {
             display: flex;
-            width: 98%;
+            width: 100%;
             padding-left: 2%;
         }
         .bloc-fonction {
@@ -128,19 +134,21 @@ header {
             height: 60px;
             align-items: center;
             margin-bottom: 15px;
-            margin-left: 20px ;
-            
+            margin-left: 20px;
+            width: 30%;
+            padding-left: 3%;
+
             &:hover{
                 transform: scale(1.015);
                 cursor: pointer;
                 transition-duration: 0.2s;    
             }
             .fas{
-                padding-left:20px;
-                padding-right: 20px;
+                display: flex;
+                padding: 13px;
             }
             span{
-                margin-left: -2%;
+                margin-left: -13%;
                 border-radius: 30px;
                 align-items: center;
                 color: white;
@@ -149,7 +157,7 @@ header {
                 height: 25px;
                 display: flex;
                 justify-content: center;
-             }
+            }
         }
     }
 }
@@ -161,29 +169,43 @@ header {
     height: auto;
     background-color: #f6f6f6;
     text-decoration: none;
+
     h2 {
     display: flex;
     width: 100%;
     padding-left: 2%; 
     }
-
+}
 .bloc-rest {                                        /*bloc restaurants*/
+   
     display: flex;
     flex-direction: column;
     background: #F2F2F2;
     border-radius: 20px;
     box-shadow: 2px 2px 5px lightgrey;
     width: 100%;
-    margin-bottom: 5%;
-    padding-bottom: 3%;
+    margin-bottom: 6%;
+    padding-bottom: 2%;
     margin-left: 2%;
     margin-right: 2%;
-    
+    text-decoration:none;
+
     &:hover {
         transform: scale(1.015);
         cursor: pointer;
         transition-duration: 0.2s;
     }
+    img {
+
+        object-fit: cover;
+        width: 100%;
+        height: 15em;
+        max-width: 100%;
+        max-height: 100%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }   
+    
     a{
         position: relative;
         text-decoration: none;
@@ -202,17 +224,17 @@ header {
         display: flex;
         flex-direction: column;
         padding-right: 3%;
-        }
+        text-decoration: none;
+        
         .fas {
             display: flex;
             justify-content: right;
             bottom: 1em;
-            color:linear-gradient(#9356DC, #FF79DA);;
             cursor: pointer;
             position: absolute;
-            right: 1%;
+            right: 2%;
+            top: 85%;
             transition: all .2s ease-in-out;
-            background-color: linear-gradient (162 deg,#FF79DA 0%, #9356DC 100%);
             opacity: 0%;
             &:hover{
                 transform: scale(1.25);
@@ -220,6 +242,7 @@ header {
                 transition-duration: infinite;
                 transition: all .5s ease-in-out;
                 opacity: 100%;
+                background-color:radial-gradient(ellipse farthest-corner at 20px 0, #FF79DA 0%, #9356DC 100%);
             }
         }
         .far{
@@ -229,35 +252,26 @@ header {
             color: #000;
             cursor: pointer;
             position: absolute;
-            right: 1%;
+            right: 2%;
+            top: 85%;
             transition: all .2s ease-in-out;
-            background-color: linear-gradient (162 deg,#FF79DA 0%, #9356DC 100%);
             opacity: 100%;
             &:hover{
                 transform: scale(1.25);
                 cursor: pointer;
                 transition-duration: infinite;
                 transition: all .5s ease-in-out;
-                opacity:0%;
+                opacity:0%; 
             }
         }
         h3, span {
             padding-left: 2%;
             margin: 0px;
-            padding-top: 3%;
+            padding-top: 2%;
+            text-decoration:none;
         }
-    }
-    
-    img {
-    height: 170px;
-    width: 100%;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    object-fit: cover;
-    }  
-}
-
-   
+    }     
+}  
 
                                                             /* MENU 4 PAGES*/
 
@@ -277,56 +291,73 @@ header {
 }   
 
 .bloc-alf{
-    border-top-left-radius:20px;
-    border-top-right-radius: 20px;
+    border-top-left-radius:40px;
+    border-top-right-radius: 40px;
     background-color: #f2f2f2;
     margin-top: -180px;
     position: relative;
     padding-bottom: 8%;
     display: flex;
     flex-direction: column;
+    .titre{
+        display: flex;
+        flex-direction: column;
+    }
     .block2{
         display: flex;
         flex-wrap: wrap;
+        padding-top: 3%;
+        justify-content: space-around;
     }
     h3{
         position: relative;
         padding-left: 20px;
         font-family: 'Shrikhand',"cursive";
-        width: 100%;
-        font-size: xxx-large;
+        font-size: xx-large;
     }
+    
 }
 .heart{
     position: relative;
     padding-right: 2%;
     text-align: right;
-    margin-top: -30px;
-    .far{
-        
-        opacity: 100%;
+    margin-top: -70px;
+    .fas {
+        display: flex;
+        justify-content: right;
+        bottom: 1em;
+        cursor: pointer;
+        position: absolute;
+        right: 2%;
+        top: 85%;
+        transition: all .2s ease-in-out;
+        opacity: 0%;
         &:hover{
-            transform: scale(1);
-            cursor: pointer;
-            transition-duration: infinite;
-            transition: all .5s ease-in-out;
-            background: linear-gradient(#9356DC, #FF79DA);
-            font-weight: 600;
-            opacity: 0;
-        }
-    }
-    .fas{
-        color: linear-gradient(#9356DC, #FF79DA);
-        margin-left: -37px;
-        opacity: 0;
-        &:hover{
-            transform: scale(1.4);
+            transform: scale(1.25);
             cursor: pointer;
             transition-duration: infinite;
             transition: all .5s ease-in-out;
             opacity: 100%;
-            background: linear-gradient(#9356DC, #FF79DA);
-            font-weight: 600;
+            background-color:radial-gradient(ellipse farthest-corner at 20px 0, #FF79DA 0%, #9356DC 100%);
+        }
+    }
+    .far{
+        display: flex;
+        justify-content: right;
+        bottom: 1em;
+        color: #000;
+        cursor: pointer;
+        position: absolute;
+        right: 2%;
+        top: 85%;
+        transition: all .2s ease-in-out;
+        opacity: 100%;
+        &:hover{
+            transform: scale(1.25);
+            cursor: pointer;
+            transition-duration: infinite;
+            transition: all .5s ease-in-out;
+            opacity:0%; 
         }
     }
 }
@@ -342,8 +373,7 @@ button{
     background-image:radial-gradient(ellipse farthest-corner at 20px 0, #FF79DA 0%, #9356DC 100%);
     align-items: center;
     color:white;
-    margin-top: 10%;
-    margin-left: 30%;  
+    margin-top: 10%;  
 }  
 
 .entrees-plats-desserts{
@@ -351,6 +381,7 @@ button{
     flex-direction: column;
     flex-wrap: wrap;
     width: 45%;
+    padding-left: 4%;
     h4{
         font-family: "roboto",sans-serif;
         margin: 20px;
@@ -367,15 +398,12 @@ button{
     flex-wrap: wrap;
     background-color: white;
     border-radius: 20px;
-    padding-bottom: 10px;
-    padding-top: 10px;
     padding-left: 15px;
     box-shadow: 3px 3px 10px #dedada;
     align-items: center;
     margin-top: 2%;
-    margin-left: 2%;
-    margin-right: 2%;
     overflow: scroll;
+    justify-content: space-between;
     
     h5{
         display: flex;
@@ -385,17 +413,19 @@ button{
         width: 100%;
         margin: 0;
     }
-    div{
+    .text{
         display: flex;
-        justify-content: space-between;
-        width: 35%;
         padding:0 0 0 0px;
         white-space: nowrap;
+        overflow-x: scroll;
     }
     span{
-        padding-left: 50%;
+        
         & :hover{
-            cursor: pointer;   
+            transform: scale(1.015);
+            cursor: pointer;
+            transition-duration: 0.2s; 
+            width: 30%;  
         }
     }
     .prix-anim{   
@@ -403,10 +433,8 @@ button{
         display: flex;
         justify-content: center;
         background-color: #99e2d0;
-        width: 30%;
         color: #fff;
         font-size: 30px;
-        
         opacity: 0;
         &:hover{
             transition: all .4s ease-in-out;
@@ -447,10 +475,23 @@ footer {
     }       
 }
 
-@media only screen and (min-width: 0px) and (max-width: 767px){
-    .block1 .conteneur-f{
-        width: 95%;
-      
+@media only screen and (max-width: 810px){
+    .block1{
+        display: flex;
+        .conteneur-f{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            .bloc-fonction{
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                padding-left: 0px;
+                span{
+                    margin-left: -1%;
+                }
+            }
+        }
     }
     .block1 .localisation{
         width: 100%;
@@ -459,7 +500,7 @@ footer {
     .conteneur-r .bloc-rest .card_new{
         display: flex;
         position: absolute;
-        left: 70%;
+        left: 80%;
         top: 5%;
     }
     .block1{
@@ -471,12 +512,12 @@ footer {
         width: 100%;
     }
     .card-menu{
-        width: 80%;
+        width: 90%;
     }
 }
     
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 811px){
     .conteneur-r .bloc-rest{
         display: flex;
         width: 43%;
@@ -501,5 +542,7 @@ footer {
         display: flex;
         flex-wrap: wrap;
     }
-    
+    .bloc-fonction .span{
+        margin-left: -13%;
+    }
 }
