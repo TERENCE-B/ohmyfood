@@ -1,4 +1,4 @@
-$cd-color1:radial-gradient(ellipse farthest-corner at 20px 0, #FF79DA 0%, #9356DC 100%);
+
 
 body {                                          /*BODY*/
 font-family: "roboto",sans-serif;
@@ -307,6 +307,7 @@ header {                                        /*HEADER LOGO*/
     .titre{
         display: flex;
         flex-direction: column;
+        
     }
     .block2{
         display: flex;
@@ -381,7 +382,7 @@ header {                                        /*HEADER LOGO*/
         opacity: 90%;
     }
 }
-button{
+button{                                             /*BOUTON COMMANDER*/
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
@@ -408,8 +409,8 @@ button{
     width: 100%;
     padding-left: 2%;
     justify-content: space-evenly;
-    animation: opac 4s;
-    background-color: #f2f2f2;
+    animation: opac 4s forwards;
+    
     h4{
         font-family: "roboto",sans-serif;
         border-bottom: 3px solid yellowgreen;
@@ -428,11 +429,18 @@ button{
 }
 
 .card-menu{
-    width: 100%;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+    display:flex;
+    flex-direction:row;
+    width:95%;
     overflow: hidden;
-    line-height: 40px;
+    height:80px;
+    margin-top:20px;
+    line-height: 25px;
+    background-color: white;
+    border-radius:20px;
+    padding-left:10px;
+    
+    box-shadow: 0 0 0.5em #D0D0D0;
 
     h5{
         overflow: hidden;
@@ -465,20 +473,17 @@ button{
 {
     0%{
         transform: translateY(-10px);
-        visibility: 0%;
+        opacity: 0%;
     }
-    50%{
-        transform: translateY(-5px);
-        visibility: 50%;
-    }
+    
     100%{
         transform: translateY(0px);
-        visibility: 100%;
+        opacity: 100%;
     }
 }
 .entrees-plats-desserts:nth-child(2)
 {
-    animation-delay:0.75s;
+    animation-delay:0.5s;
 }
 
 .entrees-plats-desserts:nth-child(3)
@@ -488,7 +493,7 @@ button{
 
 .entrees-plats-desserts:nth-child(4)
 {
-    animation-delay:1.25s; 
+    animation-delay:1.5s; 
 }
 
 .card-menu:hover .prix-anim > .fas {
@@ -606,10 +611,11 @@ footer {                                            /*FOOTER*/
         flex-direction: row;
         .bloc-fonction{
             width: 350px;
+            
         }
     }
     .card-menu{
-        width: 357px;
+        width: 400px;
         display: flex;
         flex-wrap: wrap;
     }

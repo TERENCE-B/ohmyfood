@@ -1,4 +1,5 @@
 body {
+  /*BODY*/
   font-family: "roboto",sans-serif;
   max-width: 1440px;
   margin: auto;
@@ -6,6 +7,7 @@ body {
 }
 
 header {
+  /*HEADER LOGO*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -20,6 +22,7 @@ header {
 }
 
 header img {
+  /*LOGO*/
   background-color: #fff;
   -webkit-box-shadow: 0 0 10px #f7f7f7;
           box-shadow: 0 0 10px #f7f7f7;
@@ -49,6 +52,7 @@ header img {
 }
 
 .pre-loader .loader {
+  /*ROUE DE CHARGEMENT*/
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -70,6 +74,7 @@ header img {
 }
 
 @-webkit-keyframes spin {
+  /*ANIMATION ROUE*/
   0% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
@@ -81,6 +86,7 @@ header img {
 }
 
 @keyframes spin {
+  /*ANIMATION ROUE*/
   0% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
@@ -92,6 +98,7 @@ header img {
 }
 
 @-webkit-keyframes temps {
+  /*ANIMATION VISIBLE*/
   0% {
     visibility: visible;
   }
@@ -101,6 +108,7 @@ header img {
 }
 
 @keyframes temps {
+  /*ANIMATION VISIBLE*/
   0% {
     visibility: visible;
   }
@@ -110,6 +118,7 @@ header img {
 }
 
 .block1 {
+  /*BLOCK1, LOCALISATION, ICONE & BOUTON*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -193,6 +202,7 @@ header img {
 }
 
 .block1 .conteneur-f {
+  /*CONTENEUR FONCTIONNEMENT*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -206,6 +216,7 @@ header img {
 }
 
 .block1 .conteneur-f h2 {
+  /*TITRE FONCTION*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -214,6 +225,7 @@ header img {
 }
 
 .block1 .conteneur-f .bloc-fonction {
+  /*BLOC FONCTION*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -256,7 +268,7 @@ header img {
 }
 
 .conteneur-r {
-  /*conteneur restaurants*/
+  /*CONTENEUR RESTATURANT*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -279,7 +291,7 @@ header img {
 }
 
 .bloc-rest {
-  /*bloc restaurants*/
+  /*BLOC RESTAURANT*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -308,7 +320,7 @@ header img {
 }
 
 .bloc-rest img {
-  /*images restaurants*/
+  /*IMAGES RESTAURANTS*/
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
@@ -325,6 +337,7 @@ header img {
 }
 
 .bloc-rest .card-new {
+  /*ETIQUETTE NOUVEAU*/
   background-color: #99e2d0;
   color: #1b6150;
   padding: 8px;
@@ -348,6 +361,7 @@ header img {
 }
 
 .bloc-rest .legende-br .fas {
+  /*COEUR PLEIN*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -377,6 +391,7 @@ header img {
 }
 
 .bloc-rest .legende-br .far {
+  /*COEUR VIDE*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -406,6 +421,7 @@ header img {
 }
 
 .bloc-rest .legende-br h3, .bloc-rest .legende-br span {
+  /*TEXTE*/
   padding-left: 2%;
   margin: 0px;
   padding-top: 2%;
@@ -414,6 +430,7 @@ header img {
 
 /* MENU 4 PAGES*/
 .images-restaurants {
+  /*IMAGE RESTAURANT*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -436,6 +453,7 @@ header img {
 }
 
 .bloc-alf {
+  /*BLOC, TITRE*/
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
   background-color: #f2f2f2;
@@ -478,6 +496,7 @@ header img {
 }
 
 .heart {
+  /*COEUR*/
   position: relative;
   padding-right: 2%;
   text-align: right;
@@ -485,6 +504,7 @@ header img {
 }
 
 .heart .fas {
+  /*COEUR PLEIN*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -510,6 +530,7 @@ header img {
 }
 
 .heart .far {
+  /*COEUR VIDE*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -531,6 +552,7 @@ header img {
 }
 
 @-webkit-keyframes like {
+  /*ANIMATION COEUR*/
   0% {
     opacity: 0;
   }
@@ -545,6 +567,7 @@ header img {
 }
 
 @keyframes like {
+  /*ANIMATION COEUR*/
   0% {
     opacity: 0;
   }
@@ -559,6 +582,7 @@ header img {
 }
 
 button {
+  /*BOUTON COMMANDER*/
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -590,6 +614,7 @@ button:hover {
 }
 
 .entrees-plats-desserts {
+  /*ENTREES PLATS DESSERTS*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -604,14 +629,14 @@ button:hover {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  -webkit-animation: opac 4s forwards;
+          animation: opac 4s forwards;
 }
 
 .entrees-plats-desserts h4 {
   font-family: "roboto",sans-serif;
   border-bottom: 3px solid yellowgreen;
   width: 10px;
-  border-bottom: 3px solid yellowgreen;
-  width: 22px;
   font-weight: 400;
   position: relative;
   text-transform: uppercase;
@@ -630,22 +655,20 @@ button:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 95%;
   overflow: hidden;
-  cursor: pointer;
-  background-color: #fff;
-  border-radius: 15px;
-  -webkit-box-shadow: 0px 5px 10px 0px gainsboro;
-          box-shadow: 0px 5px 10px 0px gainsboro;
+  height: 80px;
   margin-top: 20px;
-  height: 70px;
-}
-
-.card-menu:hover {
-  -webkit-transform: scale(1.015);
-          transform: scale(1.015);
-  cursor: pointer;
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
+  line-height: 25px;
+  background-color: white;
+  border-radius: 20px;
+  padding-left: 10px;
+  -webkit-box-shadow: 0 0 0.5em #D0D0D0;
+          box-shadow: 0 0 0.5em #D0D0D0;
 }
 
 .card-menu h5 {
@@ -673,6 +696,7 @@ button:hover {
 }
 
 .card-menu .fas {
+  /*ICONE ANIMATION*/
   display: inline-block;
   margin: auto;
   color: #fff;
@@ -685,17 +709,59 @@ button:hover {
   transition: transform 800ms, -webkit-transform 800ms;
 }
 
+@-webkit-keyframes opac {
+  0% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+    opacity: 0%;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 100%;
+  }
+}
+
+@keyframes opac {
+  0% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+    opacity: 0%;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 100%;
+  }
+}
+
+.entrees-plats-desserts:nth-child(2) {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.entrees-plats-desserts:nth-child(3) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.entrees-plats-desserts:nth-child(4) {
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
 .card-menu:hover .prix-anim > .fas {
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
 }
 
 .prix-anim {
+  /*PRIX ANIMATION*/
   overflow: hidden;
   text-align: center;
   background: #99E2D0;
   opacity: 0;
-  width: 1%;
+  width: 5%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -710,6 +776,7 @@ button:hover {
 }
 
 footer {
+  /*FOOTER*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -752,6 +819,7 @@ footer li .omf {
 }
 
 @media only screen and (max-width: 810px) {
+  /* MEDIA EN DESSOUS 810PX */
   .block1 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -809,6 +877,7 @@ footer li .omf {
 }
 
 @media only screen and (min-width: 811px) {
+  /* MEDIA AU DESSUS DE 811PX */
   .bloc-rest {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -841,7 +910,7 @@ footer li .omf {
     width: 350px;
   }
   .card-menu {
-    width: 350px;
+    width: 400px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
