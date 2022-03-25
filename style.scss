@@ -408,8 +408,8 @@ button{
     width: 100%;
     padding-left: 2%;
     justify-content: space-evenly;
-    animation: opac 4s forwards;
-    opacity: 0;
+    animation: opac 4s;
+    background-color: #f2f2f2;
     h4{
         font-family: "roboto",sans-serif;
         border-bottom: 3px solid yellowgreen;
@@ -465,11 +465,15 @@ button{
 {
     0%{
         transform: translateY(-10px);
-        opacity: 0;
+        visibility: 0%;
+    }
+    50%{
+        transform: translateY(-5px);
+        visibility: 50%;
     }
     100%{
         transform: translateY(0px);
-        opacity: 1;
+        visibility: 100%;
     }
 }
 .entrees-plats-desserts:nth-child(2)
@@ -487,60 +491,6 @@ button{
     animation-delay:1.25s; 
 }
 
-.entrees-plats-desserts:nth-child(5)
-{ 
-    animation-delay:1.5s;
-}
-
-.entrees-plats-desserts:nth-child(6)
-{ 
-    animation-delay:1.75s;
-}
-
-.entrees-plats-desserts:nth-child(7)
-{ 
-    animation-delay:2s;
-}
-
-.entrees-plats-desserts:nth-child(8)
-{ 
-    animation-delay:2.25s;
-}
-
-.entrees-plats-desserts:nth-child(9)
-{ 
-    animation-delay:2.5s;
-}
-
-.entrees-plats-desserts:nth-child(10)
-{ 
-    animation-delay:2.75s;
-}
-
-.entrees-plats-desserts:nth-child(11)
-{ 
-    animation-delay:3s;
-}
-
-.entrees-plats-desserts:nth-child(12)
-{ 
-    animation-delay:3.25s;
-}
-
-.entrees-plats-desserts:nth-child(13)
-{ 
-    animation-delay:3.5s;
-}
-
-.entrees-plats-desserts:nth-child(14)
-{ 
-    animation-delay:3.75s;
-}
-
-.entrees-plats-desserts:nth-child(15)
-{ 
-    animation-delay:4s;
-}
 .card-menu:hover .prix-anim > .fas {
 	transform: rotate(0deg);
 }
