@@ -1,0 +1,5 @@
+# ignore ALL files in ANY directory named dart-sass
+dart-sass/
+
+# ignore ALL .css files
+*.css
